@@ -1,0 +1,1042 @@
+ @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: "Poppins", sans-serif;
+ }
+
+ body {
+     background-color: black;
+ }
+
+ .main {
+     background-image: url("assets/images/bg.jpg");
+     background-repeat: no-repeat;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     background-position: center center;
+     height: 100vh;
+     position: relative;
+     overflow-clip-margin: content-box;
+     overflow: clip;
+ }
+
+ .main .box {
+     width: 100%;
+     opacity: 0.70;
+     height: 100vh;
+     background-color: black;
+     position: absolute;
+     top: 0;
+ }
+
+ nav {
+     display: flex;
+     width: 76vw;
+     max-width: 100%;
+     margin: auto;
+     align-items: center;
+     justify-content: space-between;
+     height: 100px;
+     padding: 32px 0px;
+ }
+
+ nav img {
+     width: 150px;
+     z-index: 10;
+     position: relative;
+     height: 100px;
+ }
+
+ nav button {
+     z-index: 10;
+     position: relative;
+ }
+
+ .lang-dropdown {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+ }
+
+ .dropdown-container {
+    border: 1px grey solid;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background: rgba(35, 35, 35, 0.8);
+}
+
+ .main .main-text {
+     width: 90%;
+     margin: auto;
+     font-family: "Martel Sans", sans-serif;
+     color: white;
+     z-index: 10;
+     height: calc(100% - 100px);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     position: relative;
+     text-align: center;
+     padding: 0px 29px;
+ }
+
+ .main-text> :nth-child(1) {
+     font-weight: 900;
+     font-size: 40px;
+     line-height: normal;
+ }
+
+ .main-text> :nth-child(2) {
+     font-weight: 400;
+     font-size: 24px;
+     line-height: normal;
+ }
+
+ .main-text> :nth-child(3) {
+     font-weight: 400;
+     font-size: 20px;
+     line-height: normal;
+ }
+
+ .separation {
+     background-color: rgba(64, 64, 64, 0.6);
+     height: 7px;
+     margin: 0;
+     padding: 0;
+     position: relative;
+     z-index: 20;
+ }
+
+ .btn {
+     padding: 5px 27px;
+     font-weight: 400;
+     font-size: 15px;
+     color: white;
+     border-radius: 6px;
+     margin-right: 12px;
+     border: 1px solid rgba(101, 101, 101, 0.768);
+     background-color: rgba(146, 146, 146, 0);
+ }
+
+ .btn-red-sm {
+     background-color: red;
+     color: white;
+     border: none;
+     padding: 4px 13px;
+     border-radius: 5px;
+ }
+
+ .btn-red {
+     color: white;
+     background-color: red;
+     border: none;
+     font-weight: 500;
+     font-size: 22px;
+     padding: 11px 29px;
+     border-radius: 5px;
+     margin: 0px 5px;
+ }
+
+ .main input {
+     border: 1px solid rgba(101, 101, 101, 0.768);
+     border-radius: 4px;
+     color: white;
+     background-color: rgba(23, 23, 23, 0.3);
+     padding: 10px 123px 16px 6px;
+     font-size: 18px;
+ }
+
+ .main-btns {
+     display: flex;
+     align-items: center;
+     justify-self: center;
+     gap: 6px;
+     margin-top: 5px;
+ }
+
+ .first {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: 78vw;
+     margin: auto;
+     color: white;
+     height: 80vh;
+ }
+
+ .phone {
+     font-size: 10px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .second {
+     font-size: 10px;
+ }
+
+ .phone img {
+     width: 30vw;
+     height: 20%;
+     position: relative;
+     /* z-index: 10; */
+ }
+
+ .secimg {
+     position: relative;
+     top: 0px;
+     padding: 0px 20px;
+     display: flex;
+ }
+
+ .secimg img {
+     width: 32vw;
+     position: relative;
+     z-index: 10;
+ }
+
+ .secimg video {
+     width: 365px;
+     position: absolute;
+     top: 72px;
+     right: 30px;
+ }
+
+ .download-img {
+     width: 25%;
+     color: rgba(101, 101, 101, 0.1);
+ }
+
+ .download {
+     background-color: black;
+     padding: 15px 15px;
+     position: absolute;
+     border: 3px solid #4b4b4b;
+     width: 50%;
+     text-align: center;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     z-index: 100;
+     top: 67%;
+     border-radius: 10px;
+ }
+
+ .download-img {
+     background-image: url("assets/images/boxshot.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 65px;
+ }
+
+ .ani {
+     position: relative;
+     display: flex;
+     width: 0px;
+ }
+
+ .secimg .download .ani img {
+     width: 4vw;
+ }
+
+ .down {
+     position: absolute;
+ }
+
+ .download-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin: 0px 0px 0px 3px;
+ }
+
+ .download-text :nth-child(1) {
+     font-size: 16px;
+     font-weight: 500;
+ }
+
+ .download-text :nth-child(2) {
+     font-size: 14px;
+     font-weight: 400;
+     color: #0071eb;
+ }
+
+ .one {
+     display: block;
+     font-size: 46px;
+     font-weight: 900;
+ }
+
+ .two {
+     font-size: 24px;
+     font-weight: 400;
+ }
+
+ section>div :first-child {
+     display: block;
+     font-size: 48px;
+     font-weight: 900;
+ }
+
+ section>div :nth-child(2) {
+     font-size: 24px;
+     font-weight: 400;
+ }
+
+ .secimg2 {
+     position: relative;
+     top: 0px;
+ }
+
+ .secimg2 img {
+     width: 35vw;
+     position: relative;
+     top: 10px;
+     z-index: 10;
+ }
+
+ .secimg2 video {
+     width: 22vw;
+     position: absolute;
+     top: 45px;
+     left: 80px;
+ }
+
+ .size {
+     width: 10vw;
+     height: 1px;
+     position: relative;
+     top: 10px;
+     z-index: 10;
+ }
+
+ .faq {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: black;
+     color: white;
+     padding: 32px;
+ }
+
+ .faq h2 {
+     font-size: 45px;
+     font-weight: 900;
+     text-align: center;
+ }
+
+ .faqbox {
+     margin: 5px auto;
+     max-width: 75vw;
+     /* margin-top:3% ; */
+     display: flex;
+     width: 100%;
+     font-size: 25px;
+     font-weight: 400;
+     background-color: #2d2d2d;
+     padding: 20px 33px;
+     justify-content: space-between;
+     align-items: center;
+     cursor: pointer;
+     transition: all 0.1s ease-in-out;
+ }
+
+ .faqbox:hover {
+     background-color: rgb(65 65 65);
+ }
+
+ .sign {
+     filter: invert();  
+     width:44px; 
+     height:40px;   
+ }
+
+ .ask {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: auto;
+     text-align: center;
+     font-size: 20px;
+     font-weight: 400;
+     color: white;
+     margin: 35px;
+ }
+
+ .ask input {
+     border: 1px solid rgba(101, 101, 101, 0.768);
+     border-radius: 4px;
+     color: white;
+     background-color: rgba(23, 23, 23, 0.3);
+     padding: 10px 123px 16px 6px;
+     margin: 2px 0px;
+     font-size: 18px;
+ }
+
+ .ask span {
+     display: block;
+ }
+
+ footer {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5%;
+}
+
+footer svg {
+    color: white;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+}
+select option{
+    color:black;
+}
+.footer {
+    display: flex;
+    width:75vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+}
+
+.links {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr;
+    gap: 10px;
+}
+
+
+ @media screen and (min-width:2400px) {
+     nav img {
+         width: 230px;
+     }
+
+     .main-text> :nth-child(1) {
+         font-weight: 900;
+         font-size: 55px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(2) {
+         font-weight: 400;
+         font-size: 44px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(3) {
+         font-weight: 400;
+         font-size: 40px;
+         line-height: normal;
+     }
+
+     .btn {
+         font-size: 28px;
+     }
+
+     .btn-red {
+         font-size: 32px;
+     }
+
+     .main input {
+         font-size: 30px;
+     }
+
+     .secimg img {
+         width: 33vw;
+     }
+
+     .secimg video {
+         width: 690px;
+         position: absolute;
+         top: 85px;
+         right: 30px;
+     }
+     
+ .secimg2 img {
+    width: 35vw;
+    position: relative;
+    top: 10px;
+    z-index: 10;
+}
+
+.secimg2 video {
+    width: 23vw;
+    position: absolute;
+    top: 60px;
+    left: 150px;
+}
+.faqbox{
+    max-width: 60vw;
+}
+.footer{
+    width: 60vw;
+}
+}
+
+
+ /* @media screen and (max-width:1980px) {
+    .faqbox{
+        max-width: 60vw;
+    }
+ } */
+ @media screen and (max-width:1740px) {
+   .fourth img{
+    width: 45vw;
+   }
+ }
+
+ @media screen and (max-width:1340px) {
+   .fourth img{
+    width: 43vw;
+   }
+
+    .download {
+         width: 60%;
+     }
+ }
+
+ @media screen and (max-width:1296px) {
+     nav {
+         width: 100vw;
+         max-width: 95%;
+     }
+     .faqbox{
+        max-width: 90vw;
+    }
+ }
+
+ @media screen and (max-width:1275px) {
+     .first {
+         max-width: 95vw;
+         justify-content: space-between;
+     }
+
+     .secimg img {
+         width: 45vw;
+     }
+
+     .secimg video {
+         width: 445px;
+     }
+
+     .fourth img{
+        width: 45vw;
+       }
+       .footer{
+        width: 90vw;
+        gap:1.6rem;
+    }
+    .links {
+        grid-template-columns: 2.8fr 2.8fr 2.8fr 2.8fr;
+    }
+ }
+
+ @media screen and (max-width:1175px) {
+     .secimg2 img {
+         width: 42vw;
+     }
+
+     .secimg2 video {
+         width: 26vw;
+     }
+
+     .fourth img{
+        width: 46vw;
+       }
+ }
+
+ @media screen and (max-width:1045px) {
+     .secimg video {
+         width: 400px;
+     }
+ }
+
+ @media screen and (max-width:996px) {
+     nav img {
+         width: 110px;
+     }
+
+     .main-text> :nth-child(1) {
+         font-weight: 900;
+         font-size: 30px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(2) {
+         font-weight: 400;
+         font-size: 18px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(3) {
+         font-weight: 400;
+         font-size: 15px;
+         line-height: normal;
+     }
+
+     .btn-red {
+         padding: 9px 29px;
+     }
+
+     .main input {
+         font-size: 15px;
+     }
+
+     .fourth img{
+        width: 50vw;
+       }
+ }
+
+ @media screen and (max-width:965px) {
+     .first {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         padding: 36% 0px;
+     }
+
+     .second, .fourth {
+         flex-direction: column-reverse;
+     }
+     
+     .phone img {
+         position: relative;
+         top: 10%;
+         width: 100vw;
+         height: 110%;
+     }
+
+     .download {
+         width: 70%;
+         top: 75%;
+         padding: 5px 10px;
+     }
+
+     .download-img {
+         height: 60px;
+     }
+
+     .one {
+         display: block;
+         font-size: 28px;
+         font-weight: 900;
+     }
+
+     .two {
+         font-size: 19px;
+         font-weight: 400;
+     }
+
+     .download-text :nth-child(1) {
+         font-size: 14px;
+         font-weight: 500;
+     }
+
+     .download-text :nth-child(2) {
+         font-size: 8px;
+         font-weight: 400;
+         color: #0071eb;
+     }
+
+     section>div :first-child {
+         display: block;
+         font-size: 32px;
+         font-weight: 900;
+     }
+
+     section>div :nth-child(2) {
+         font-size: 18px;
+         font-weight: 400;
+     }
+
+     .secimg img {
+         width: 75vw;
+     }
+
+     .secimg video {
+         top: 75px;
+         width: 555px;
+     }
+
+     .secimg2 img {
+         width: 50vw;
+     }
+
+     .secimg2 video {
+         width: 31vw;
+     }
+
+     .faq h2 {
+        font-size: 25px;
+     }
+
+     .faqbox{
+        font-size: 15px;
+    }
+
+    .sign {
+        width:28px; 
+        height:23px;   
+    }
+
+    .links {
+        grid-template-columns: 2.8fr 2.8fr;
+    }
+
+ }
+
+ @media screen and (max-width:770px) {
+    
+ .secimg2 img {
+    width: 51vw;
+}
+
+.secimg2 video {
+    width: 31vw;
+    position: absolute;
+    top: 37px;
+    left: 72px;
+}
+ }
+
+ @media screen and (max-width:743px) {
+     .secimg video {
+         width: 450px;
+     }
+
+     .secimg2 img {
+         width: 65vw;
+     }
+
+     .secimg2 video {
+         width: 43vw;
+         position: absolute;
+         top: 40px;
+         left: 72px;
+     }
+     .third>div :nth-child(1){
+        font-size: 25px;
+     }
+     .third>div :nth-child(2){
+        font-size: 11px;
+     }
+
+     .fourth img{
+        width:80vw;
+     }
+
+     .ask{
+        font-size: 17px;
+     }
+
+     .ask input{
+        font-size: 15px;
+     }
+ 
+ }
+
+ @media screen and (max-width:676px) {
+     .download-img {
+         height: 55px;
+     }
+
+     .download {
+         width: 60%;
+     }
+
+     .secimg .download .ani img {
+         width: 3vw;
+     }
+
+     .download-text :nth-child(1) {
+         font-size: 10px;
+         font-weight: 500;
+     }
+
+     .download-text :nth-child(2) {
+         font-size: 7px;
+         font-weight: 400;
+         color: #0071eb;
+     }
+
+     .main-text> :nth-child(1) {
+         font-weight: 900;
+         font-size: 28px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(2) {
+         font-weight: 400;
+         font-size: 18px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(3) {
+         font-weight: 400;
+         font-size: 15px;
+         line-height: normal;
+     }
+
+     .btn-red {
+         padding: 9px 22px;
+         font-size: 17px;
+     }
+
+     .main input {
+         font-size: 12px;
+     }
+
+     .secimg2 img {
+        width: 65vw;
+    }
+
+    .secimg2 video {
+        width: 42vw;
+        position: absolute;
+        top: 30px;
+        left: 65px;
+    }
+    
+    .fourth img{
+        width:85vw;
+     }
+
+     .ask input{
+        font-size: 12px;
+     }
+ }
+
+
+ @media screen and (max-width:615px) {
+     .secimg video {
+         width: 350px;
+     }
+ }
+
+ @media screen and (max-width:572px) {
+     .download-img {
+         height: 50px;
+     }
+
+     .download {
+         width: 65%;
+     }
+
+     .secimg .download .ani img {
+         width: 3vw;
+     }
+
+     .download-text :nth-child(1) {
+         font-size: 9px;
+         font-weight: 500;
+     }
+
+     .download-text :nth-child(2) {
+         font-size: 6px;
+         font-weight: 400;
+         color: #0071eb;
+     }
+
+     .main-text> :nth-child(1) {
+         font-weight: 900;
+         font-size: 28px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(2) {
+         font-weight: 400;
+         font-size: 20px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(3) {
+         font-weight: 400;
+         font-size: 17px;
+         line-height: normal;
+     }
+
+     .main-text {
+         width: 100%;
+     }
+
+     .main input {
+         width: 100%;
+         font-size: 19px;
+         padding: 10px 125px 14px 16px;
+     }
+
+     .main-btns {
+         flex-direction: column;
+     }
+
+     .ask{
+        font-size: 16px;
+     }
+
+     .ask input{
+        font-size: 17px;
+     }
+
+     .secimg video {
+         top: 40px;
+         width: 330px;
+     }
+     
+     .secimg2 img {
+        width: 65vw;
+    }
+
+    .secimg2 video {
+        width: 40vw;
+        position: absolute;
+        top: 30px;
+        left: 65px;
+    } 
+    .third>div :nth-child(1){
+       font-size: 22px;
+    }
+    .third>div :nth-child(2){
+       font-size: 9px;
+    }
+ }
+
+ @media screen and (max-width:490px) {
+     .main {
+         max-width: 100%;
+         width: 100vw;
+     }
+
+     .main-text> :nth-child(1) {
+         font-weight: 900;
+         font-size: 25px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(2) {
+         font-weight: 400;
+         font-size: 18px;
+         line-height: normal;
+     }
+
+     .main-text> :nth-child(3) {
+         font-weight: 400;
+         font-size: 15px;
+         line-height: normal;
+     }
+
+     .secimg video {
+         top: 40px;
+         width: 260px;
+     }
+ }
+
+ @media screen and (max-width:440px) {
+     .download-img {
+         height: 40px;
+     }
+
+     .download {
+         width: 73%;
+     }
+
+     .secimg .download .ani img {
+         width: 2.5vw;
+     }
+
+     .download-text :nth-child(1) {
+         font-size: 8px;
+         font-weight: 500;
+     }
+
+     .download-text :nth-child(2) {
+         font-size: 5px;
+         font-weight: 400;
+         color: #0071eb;
+     }
+     .secimg2 img {
+        width: 67vw;
+    }
+
+    .secimg2 video {
+        width: 42.5vw;
+        position: absolute;
+        top: 25px;
+        left: 45px;
+    } 
+
+    .main-text> :nth-child(2) {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: normal;
+    }
+
+    .main-text> :nth-child(3) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: normal;
+    }
+ }
+
+ @media screen and (max-width:340px) {
+     .download-img {
+         height: 32px;
+     }
+
+     .download {
+         width: 75%;
+     }
+
+     .secimg .download .ani img {
+         width: 2vw;
+     }
+
+     .download-text :nth-child(1) {
+         font-size: 7px;
+         font-weight: 500;
+     }
+
+     .download-text :nth-child(2) {
+         font-size: 4px;
+         font-weight: 400;
+         color: #0071eb;
+     }
+ }
+
+ 
+ @media screen and (max-width:340px) {
+    
+    .secimg2 img {
+        width: 67vw;
+    }
+
+    .secimg2 video {
+        width: 40vw;
+        position: absolute;
+        top: 19px;
+        left: 35px;
+    } 
+     
+    .ask{
+        font-size: 14px;
+     }
+
+     .ask input{
+        font-size: 14px;
+     }
+}
