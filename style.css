@@ -59,18 +59,18 @@
  }
 
  .lang-dropdown {
-    background: transparent;
-    border: none;
-    color: white;
-    outline: none;
+     background: transparent;
+     border: none;
+     color: white;
+     outline: none;
  }
 
  .dropdown-container {
-    border: 1px grey solid;
-    padding: 5px 12px;
-    border-radius: 5px;
-    background: rgba(35, 35, 35, 0.8);
-}
+     border: 1px grey solid;
+     padding: 5px 12px;
+     border-radius: 5px;
+     background: rgba(35, 35, 35, 0.8);
+ }
 
  .main .main-text {
      width: 90%;
@@ -182,11 +182,13 @@
      font-size: 10px;
  }
 
+ .second .phone .phone-img {
+     width: 35vw;
+ }
+
  .phone img {
-     width: 30vw;
-     height: 20%;
+     height: 33%;
      position: relative;
-     /* z-index: 10; */
  }
 
  .secimg {
@@ -219,10 +221,9 @@
      padding: 15px 15px;
      position: absolute;
      border: 3px solid #4b4b4b;
-     width: 50%;
+     width: 55%;
      text-align: center;
      display: flex;
-     justify-content: flex-start;
      align-items: center;
      z-index: 100;
      top: 67%;
@@ -355,9 +356,9 @@
  }
 
  .sign {
-     filter: invert();  
-     width:44px; 
-     height:40px;   
+     filter: invert();
+     width: 44px;
+     height: 40px;
  }
 
  .ask {
@@ -370,7 +371,8 @@
      font-size: 20px;
      font-weight: 400;
      color: white;
-     margin: 35px;
+     margin: 25px;
+     padding: 5px 30px;
  }
 
  .ask input {
@@ -378,7 +380,7 @@
      border-radius: 4px;
      color: white;
      background-color: rgba(23, 23, 23, 0.3);
-     padding: 10px 123px 16px 6px;
+     padding: 2% 123px 16px 6px;
      margin: 2px 0px;
      font-size: 18px;
  }
@@ -388,37 +390,39 @@
  }
 
  footer {
-    color: rgba(255, 255, 255, 0.7);
-    padding: 5%;
-}
+     color: rgba(255, 255, 255, 0.7);
+     padding: 5%;
+ }
 
-footer svg {
-    color: white;
-}
+ footer svg {
+     color: white;
+ }
 
-footer a {
-    color: rgba(255, 255, 255, 0.7);
-}
-select option{
-    color:black;
-}
-.footer {
-    display: flex;
-    width:75vw;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.4rem;
-}
+ footer a {
+     color: rgba(255, 255, 255, 0.7);
+ }
 
-.links {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr;
-    gap: 10px;
-}
+ select option {
+     color: black;
+ }
+
+ .footer {
+     display: flex;
+     width: 75vw;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 1.4rem;
+ }
+
+ .footer-links {
+     display: grid;
+     width: 100%;
+     grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr;
+     gap: 10px;
+ }
 
 
  @media screen and (min-width:2400px) {
@@ -466,46 +470,42 @@ select option{
          top: 85px;
          right: 30px;
      }
-     
- .secimg2 img {
-    width: 35vw;
-    position: relative;
-    top: 10px;
-    z-index: 10;
-}
 
-.secimg2 video {
-    width: 23vw;
-    position: absolute;
-    top: 60px;
-    left: 150px;
-}
-.faqbox{
-    max-width: 60vw;
-}
-.footer{
-    width: 60vw;
-}
-}
+     .secimg2 img {
+         width: 35vw;
+         position: relative;
+         top: 10px;
+         z-index: 10;
+     }
 
+     .secimg2 video {
+         width: 23vw;
+         position: absolute;
+         top: 60px;
+         left: 150px;
+     }
 
- /* @media screen and (max-width:1980px) {
-    .faqbox{
-        max-width: 60vw;
-    }
- } */
+     .faqbox {
+         max-width: 60vw;
+     }
+
+     .footer {
+         width: 60vw;
+     }
+ }
+
  @media screen and (max-width:1740px) {
-   .fourth img{
-    width: 45vw;
-   }
+     .fourth img {
+         width: 45vw;
+     }
  }
 
  @media screen and (max-width:1340px) {
-   .fourth img{
-    width: 43vw;
-   }
+     .fourth img {
+         width: 43vw;
+     }
 
-    .download {
+     .download {
          width: 60%;
      }
  }
@@ -515,9 +515,10 @@ select option{
          width: 100vw;
          max-width: 95%;
      }
-     .faqbox{
-        max-width: 90vw;
-    }
+
+     .faqbox {
+         max-width: 90vw;
+     }
  }
 
  @media screen and (max-width:1275px) {
@@ -534,16 +535,18 @@ select option{
          width: 445px;
      }
 
-     .fourth img{
-        width: 45vw;
-       }
-       .footer{
-        width: 90vw;
-        gap:1.6rem;
-    }
-    .links {
-        grid-template-columns: 2.8fr 2.8fr 2.8fr 2.8fr;
-    }
+     .fourth img {
+         width: 45vw;
+     }
+
+     .footer {
+         width: 90vw;
+         gap: 1.6rem;
+     }
+
+     .footer-links {
+         grid-template-columns: 2.8fr 2.8fr 2.8fr 2.8fr;
+     }
  }
 
  @media screen and (max-width:1175px) {
@@ -555,15 +558,24 @@ select option{
          width: 26vw;
      }
 
-     .fourth img{
-        width: 46vw;
-       }
+     .fourth img {
+         width: 46vw;
+     }
  }
 
  @media screen and (max-width:1045px) {
      .secimg video {
          width: 400px;
      }
+
+     .download-text :nth-child(1) {
+         font-size: 13px;
+     }
+
+     .download-text :nth-child(2) {
+         font-size: 11px;
+     }
+
  }
 
  @media screen and (max-width:996px) {
@@ -597,9 +609,9 @@ select option{
          font-size: 15px;
      }
 
-     .fourth img{
-        width: 50vw;
-       }
+     .fourth img {
+         width: 50vw;
+     }
  }
 
  @media screen and (max-width:965px) {
@@ -611,25 +623,40 @@ select option{
          padding: 36% 0px;
      }
 
-     .second, .fourth {
+     .second,
+     .fourth {
          flex-direction: column-reverse;
      }
-     
+
      .phone img {
          position: relative;
          top: 10%;
-         width: 100vw;
+         width: 140%;
          height: 110%;
      }
 
      .download {
-         width: 70%;
-         top: 75%;
-         padding: 5px 10px;
+         width: 50%;
+         top: 90%;
+         padding: 7px 5px;
      }
 
      .download-img {
-         height: 60px;
+         align-self: flex-start;
+     }
+
+     .second .phone .phone-img {
+         width: 94%;
+         height: 100%;
+     }
+
+     .download-img {
+         height: 55px;
+     }
+
+     .ani {
+         float: right;
+         margin: 0px 0px 0px 20%;
      }
 
      .one {
@@ -644,14 +671,11 @@ select option{
      }
 
      .download-text :nth-child(1) {
-         font-size: 14px;
-         font-weight: 500;
+         font-size: 15px;
      }
 
      .download-text :nth-child(2) {
-         font-size: 8px;
-         font-weight: 400;
-         color: #0071eb;
+         font-size: 10px;
      }
 
      section>div :first-child {
@@ -683,36 +707,36 @@ select option{
      }
 
      .faq h2 {
-        font-size: 25px;
+         font-size: 25px;
      }
 
-     .faqbox{
-        font-size: 15px;
-    }
+     .faqbox {
+         font-size: 15px;
+     }
 
-    .sign {
-        width:28px; 
-        height:23px;   
-    }
+     .sign {
+         width: 28px;
+         height: 23px;
+     }
 
-    .links {
-        grid-template-columns: 2.8fr 2.8fr;
-    }
+     .footer-links {
+         grid-template-columns: 2.8fr 2.8fr;
+     }
 
  }
 
  @media screen and (max-width:770px) {
-    
- .secimg2 img {
-    width: 51vw;
-}
 
-.secimg2 video {
-    width: 31vw;
-    position: absolute;
-    top: 37px;
-    left: 72px;
-}
+     .secimg2 img {
+         width: 51vw;
+     }
+
+     .secimg2 video {
+         width: 31vw;
+         position: absolute;
+         top: 37px;
+         left: 72px;
+     }
  }
 
  @media screen and (max-width:743px) {
@@ -730,49 +754,39 @@ select option{
          top: 40px;
          left: 72px;
      }
-     .third>div :nth-child(1){
-        font-size: 25px;
-     }
-     .third>div :nth-child(2){
-        font-size: 11px;
+
+     .third>div :nth-child(1) {
+         font-size: 25px;
      }
 
-     .fourth img{
-        width:80vw;
+     .third>div :nth-child(2) {
+         font-size: 11px;
      }
 
-     .ask{
-        font-size: 17px;
+     .fourth img {
+         width: 80vw;
      }
 
-     .ask input{
-        font-size: 15px;
+     .ask {
+         font-size: 17px;
      }
- 
+
+     .ask input {
+         font-size: 15px;
+         padding: 10px 6%;
+     }
+
+     .ask button {
+         padding: 11px;
+         font-size: 15px;
+         display: flex;
+     }
  }
 
  @media screen and (max-width:676px) {
-     .download-img {
-         height: 55px;
-     }
-
-     .download {
-         width: 60%;
-     }
-
-     .secimg .download .ani img {
-         width: 3vw;
-     }
-
-     .download-text :nth-child(1) {
-         font-size: 10px;
-         font-weight: 500;
-     }
-
-     .download-text :nth-child(2) {
-         font-size: 7px;
-         font-weight: 400;
-         color: #0071eb;
+     .ani {
+         float: right;
+         margin: 0px 0px 0px 10%;
      }
 
      .main-text> :nth-child(1) {
@@ -803,22 +817,22 @@ select option{
      }
 
      .secimg2 img {
-        width: 65vw;
-    }
-
-    .secimg2 video {
-        width: 42vw;
-        position: absolute;
-        top: 30px;
-        left: 65px;
-    }
-    
-    .fourth img{
-        width:85vw;
+         width: 65vw;
      }
 
-     .ask input{
-        font-size: 12px;
+     .secimg2 video {
+         width: 42vw;
+         position: absolute;
+         top: 30px;
+         left: 65px;
+     }
+
+     .fourth img {
+         width: 85vw;
+     }
+
+     .ask input {
+         font-size: 12px;
      }
  }
 
@@ -831,26 +845,15 @@ select option{
 
  @media screen and (max-width:572px) {
      .download-img {
-         height: 50px;
-     }
-
-     .download {
-         width: 65%;
-     }
-
-     .secimg .download .ani img {
-         width: 3vw;
+         height: 45px;
      }
 
      .download-text :nth-child(1) {
-         font-size: 9px;
-         font-weight: 500;
+         font-size: 12px;
      }
 
      .download-text :nth-child(2) {
-         font-size: 6px;
-         font-weight: 400;
-         color: #0071eb;
+         font-size: 10px;
      }
 
      .main-text> :nth-child(1) {
@@ -885,35 +888,37 @@ select option{
          flex-direction: column;
      }
 
-     .ask{
-        font-size: 16px;
+     .ask {
+         font-size: 16px;
      }
 
-     .ask input{
-        font-size: 17px;
+     .ask input {
+         font-size: 17px;
      }
 
      .secimg video {
          top: 40px;
          width: 330px;
      }
-     
-     .secimg2 img {
-        width: 65vw;
-    }
 
-    .secimg2 video {
-        width: 40vw;
-        position: absolute;
-        top: 30px;
-        left: 65px;
-    } 
-    .third>div :nth-child(1){
-       font-size: 22px;
-    }
-    .third>div :nth-child(2){
-       font-size: 9px;
-    }
+     .secimg2 img {
+         width: 65vw;
+     }
+
+     .secimg2 video {
+         width: 40vw;
+         position: absolute;
+         top: 30px;
+         left: 65px;
+     }
+
+     .third>div :nth-child(1) {
+         font-size: 22px;
+     }
+
+     .third>div :nth-child(2) {
+         font-size: 9px;
+     }
  }
 
  @media screen and (max-width:490px) {
@@ -948,49 +953,43 @@ select option{
 
  @media screen and (max-width:440px) {
      .download-img {
-         height: 40px;
-     }
-
-     .download {
-         width: 73%;
-     }
-
-     .secimg .download .ani img {
-         width: 2.5vw;
+         height: 35px;
      }
 
      .download-text :nth-child(1) {
-         font-size: 8px;
-         font-weight: 500;
+         font-size: 10px;
      }
 
      .download-text :nth-child(2) {
-         font-size: 5px;
-         font-weight: 400;
-         color: #0071eb;
+         font-size: 8px;
      }
+
+     .ani {
+         margin: 0px 0px 0px 8%;
+     }
+
      .secimg2 img {
-        width: 67vw;
-    }
+         width: 67vw;
+     }
 
-    .secimg2 video {
-        width: 42.5vw;
-        position: absolute;
-        top: 25px;
-        left: 45px;
-    } 
+     .secimg2 video {
+         width: 42.5vw;
+         position: absolute;
+         top: 25px;
+         left: 45px;
+     }
 
-    .main-text> :nth-child(2) {
-        font-weight: 400;
-        font-size: 19px;
-        line-height: normal;
-    }
+     .main-text> :nth-child(2) {
+         font-weight: 400;
+         font-size: 19px;
+         line-height: normal;
+     }
 
-    .main-text> :nth-child(3) {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: normal;
-    }
+     .main-text> :nth-child(3) {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: normal;
+     }
  }
 
  @media screen and (max-width:340px) {
@@ -998,45 +997,43 @@ select option{
          height: 32px;
      }
 
-     .download {
-         width: 75%;
-     }
-
-     .secimg .download .ani img {
-         width: 2vw;
-     }
-
      .download-text :nth-child(1) {
-         font-size: 7px;
-         font-weight: 500;
+         font-size: 9px;
      }
 
      .download-text :nth-child(2) {
-         font-size: 4px;
-         font-weight: 400;
-         color: #0071eb;
+         font-size: 8px;
      }
  }
 
- 
  @media screen and (max-width:340px) {
-    
-    .secimg2 img {
-        width: 67vw;
-    }
 
-    .secimg2 video {
-        width: 40vw;
-        position: absolute;
-        top: 19px;
-        left: 35px;
-    } 
-     
-    .ask{
-        font-size: 14px;
+     .secimg2 img {
+         width: 67vw;
      }
 
-     .ask input{
-        font-size: 14px;
+     .secimg2 video {
+         width: 40vw;
+         position: absolute;
+         top: 19px;
+         left: 35px;
      }
-}
+
+     .ask {
+         font-size: 14px;
+     }
+
+     .ask input {
+         font-size: 14px;
+     }
+ }
+
+ @media screen and (max-width:290px) {
+     .download-text :nth-child(1) {
+         font-size: 7px;
+     }
+
+     .download-text :nth-child(2) {
+         font-size: 5px;
+     }
+ }
